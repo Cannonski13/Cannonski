@@ -11,36 +11,35 @@ bot.on('messageCreate', msg => {
 
     if (msg.author.bot) return;
 
-    if (msg.content === '!updates') {
+    if (msg.content === '?updates') {
         bot.createMessage(msg.channel.id, {embed: {
-            description: 'Our list of updates can be found in the Official Server (Run command !help to join)'
+            description: 'Here is the Updates: https://docs.google.com/document/d/1R9D9B1D2_x3f3RFJRLECZ3RLUorm8_SLH6HkAOunDhI/edit?usp=sharing'
         }})
         .catch((e) => {console.log(e)});
 
         console.log(usedby);
     };
         
-    if (msg.content === '!commands') {
+    if (msg.content === '?commands') {
         bot.createMessage(msg.channel.id, {embed: {
-            description: 'Commands can be found here: https://docs.google.com/document/d/1N9rm2l-dF305MAUNLJp80HhokmWhZ-1dQ2xbm-CMv_s/edit?usp=sharing'
-        }})
+            description: 'Commands can be found here: https://docs.google.com/document/d/1gx5zt7wdAxfEdgGJoDBoVGPZZl6v_fpRKKO3jUJMpvQ/edit?usp=sharing'
         .catch((e) => {console.log(e)});
 
         console.log(usedby);
     };
 
-    if (msg.content === '!help') {
+    if (msg.content === '?help') {
         bot.createMessage(msg.channel.id, {embed: {
-            description: 'If you require help than please join the support server here: https://discord.gg/zw8Yzhf'
+            description: 'Here is the link to our Support Server: https://discord.gg/gUVZw7y'
         }})
         .catch((e) => {console.log(e)});
 
         console.log(usedby);
     };
       
-    if (msg.content === '!addme') {
+    if (msg.content === '?addme') {
         bot.createMessage(msg.channel.id, {embed: {
-            description: 'You can add me here: https://discordapp.com/api/oauth2/authorize?client_id=497951381819359233&permissions=0&scope=bot'
+            description: 'You can add me here: https://discordapp.com/api/oauth2/authorize?client_id=500170629329190912&permissions=8&scope=bot'
         }})
         .catch((e) => {console.log(e)});
 
