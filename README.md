@@ -1,0 +1,2 @@
+# Cannonski
+Discord Moderation Bot
